@@ -1,0 +1,19 @@
+<p>course-list works!</p>
+<table>
+    <tr>
+      <th>Course Name</th>
+      <th>Cost</th>
+      <th>Trainer Name</th>
+      <th>Duration</th>
+    </tr>
+    <tr *ngFor="let mycou of MyCourseList">
+    <td>{{mycou.cname}}</td>
+    <td>{{mycou.cost}}</td>
+    <td>{{mycou.trainer}}</td>
+    <td>{{mycou.duration}}</td>
+    <td>
+      <button (click)="getCourseInfo(mycou)">View Data</button>
+    </td>
+  </tr>
+  </table>
+  
