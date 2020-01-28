@@ -1,6 +1,6 @@
 <div class="enrollments">
-    <h2>No of Today Enrollments: {{EnrollmentData.enrollmentCount}}</h2>
-    <h2>Show Enrollments: {{ShowEnrollments}}</h2>
+    <h2>No of Today Enrollments: {{EnrollmentsData.enrollmentsCount}}</h2>
+    <h2>Show Enrollments: {{ ShowEnrollments }}</h2>
     <table>
         <tr>
             <th>SID</th>
@@ -11,7 +11,7 @@
             <th>FeePaid</th>
             <th>FeeBal</th>
         </tr>
-        <tr *ngFor="let myenrollments of EnrollmentData.enrollmentsList">
+        <tr *ngFor="let myenrollments of EnrollmentsData.enrollmentsList">
             <th>{{myenrollments.sid}}</th>
             <th>{{myenrollments.sname}}</th>
             <th>{{myenrollments.email}}</th>

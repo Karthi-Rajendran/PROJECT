@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LeadsComponent implements OnInit {
 
-  //To receive data & display in respective ttemplate i.e leads.component.html
+  //To receive data & display in respective template i.e leads.component.html
   @Input() LeadsData;
   @Input() ShowLeads;
 

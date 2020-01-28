@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EnrollmentsComponent implements OnInit {
 
-  //To receive data & display in respective ttemplate i.e leads.component.html
-  @Input() EnrollmentData;
+  //To receive data & display in respective ttemplate i.e enrollments.component.html
+  @Input() EnrollmentsData;
   @Input() ShowEnrollments;
 
   constructor() { }
