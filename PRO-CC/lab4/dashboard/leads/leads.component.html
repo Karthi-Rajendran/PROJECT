@@ -1,0 +1,20 @@
+<div class="leads">
+    <h2>No of Today Leads: {{LeadsData.leadCount}}</h2>
+    <h2>Show Leads: {{ShowLeads}}</h2>
+    <table>
+        <tr>
+            <th>Lead Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+        </tr>
+        <tr *ngFor="let mylead of LeadsData.leadsList">
+            <th>{{mylead.leadId}}</th>
+            <th>{{mylead.name}}</th>
+            <th>{{mylead.email}}</th>
+            <th>{{mylead.phone}}</th>
+            <th>{{mylead.status}}</th>
+        </tr>
+    </table>
+</div>
