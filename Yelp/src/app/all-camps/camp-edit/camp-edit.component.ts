@@ -18,7 +18,9 @@ export class CampEditComponent implements OnInit {
   camptoedit :Camp;
   newcamp: Camp;
 
-  constructor( private route: ActivatedRoute , private allCampsService : ManageCampsService, private router: Router ) { }
+  constructor( private route: ActivatedRoute ,
+     private allCampsService : ManageCampsService,
+      private router: Router ) { }
 
   ngOnInit() {
   //   this.route.queryParams.subscribe(

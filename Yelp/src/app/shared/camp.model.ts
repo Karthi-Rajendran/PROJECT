@@ -1,10 +1,10 @@
 
 
 export class Camp {
+  public id : number;
   public name: string;
   public description: string;
   public imagePath: string;
-  public id : number;
 
 
   constructor(name: string, desc: string, imagePath: string , id:number) {

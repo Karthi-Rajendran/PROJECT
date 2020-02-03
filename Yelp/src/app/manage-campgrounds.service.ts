@@ -3,23 +3,20 @@ import { Subject } from 'rxjs/Subject';
 
 export class ManageCampsService{
 
-  campsChanged = new Subject<Camp[]>();
+   campsChanged = new Subject<Camp[]>();
+   private campgrounds: Camp[] = [];
 
-
-  private campgrounds : Camp [] =[
-
-		new Camp ('camp1'  , 'This is the first camp' , 'http://www.ninja-creative.com/wp-content/uploads/revslider/homepage/big-ninja-2.png' , 1),
-		new Camp ('camp2'  , 'This is the second camp' , 'http://www.lanlinglaurel.com/data/out/52/4355911-ninja-pictures.png' , 2),
-		new Camp ('camp3'  , 'This is the second camp' , 'https://myanimelist.cdn-dena.com/s/common/uploaded_files/1463567469-b96b1c44686c1173a609405e0d35262e.jpeg' , 3),
-		new Camp ('camp4'  , 'This is the second camp' , 'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG' , 4)
-	];
+  //  private campgrounds : Camp [] =[
+	// 	new Camp ('camp1'  , 'This is the first camp' , 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' , 1),
+	// 	new Camp ('camp2'  , 'This is the second camp' , 'https://images.unsplash.com/photo-1510312305653-8ed496efae75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' , 2),
+	// 	new Camp ('camp3'  , 'This is the Third camp' , 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' , 3),
+	// 	new Camp ('camp4'  , 'This is the Fourth camp' , 'https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' , 4)
+	// ];
 
 		constructor () {}
 
-		getAllCamps(){
-			console.log("here");
+		getAllCamps(){			
 			return this.campgrounds.slice();
-
 		}
 
 		getCamp(id:number){

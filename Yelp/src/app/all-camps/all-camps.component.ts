@@ -31,14 +31,12 @@ export class AllCampsComponent implements OnInit {
   }
 
   onSaveData(){
-    this.dataStorageService.storeCamps().subscribe(
-      (response : Response) => {console.log(response);}
-    );
+    this.dataStorageService.storeCamps();
   }
 
-  onGetData(){
-    this.dataStorageService.getCamps();
-  }
+   onGetData(){
+     this.dataStorageService.getCamps();
+   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
